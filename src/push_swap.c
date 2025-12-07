@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 19:56:48 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/06 12:36:30 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/07 16:10:09 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(int argc, char **argv)
 	if (argv_validation(argc, argv))
 		invalid_argv();
 	stack_a_creating(&stack_a, argc, argv);
-	if (sorted_validation(stack_a))
+	if (!sorted_validation(stack_a))
 	{
 		if (stack_length(stack_a) == 2)
 			sa(&stack_a);

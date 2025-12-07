@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 11:57:08 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/06 12:39:44 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/07 23:56:58 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,14 @@ void	sort_small(t_stack **stack_a)
 		rra(stack_a);
 	if ((*stack_a)->fig > (*stack_a)->next_node->fig)
 		sa(stack_a);
+}
+
+void	sort_five(t_stack **stack_a, t_stack **stack_b)
+{
+	while (stack_length(*stack_a) > 3)
+	{
+		init_stack(*stack_a, *stack_b);
+		finish_rotation(stack_a, find_smallest_node(*stack_a), 'a');
+		pb(stack_b, stack_a);
+	}
 }

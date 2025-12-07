@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 23:34:58 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/06 12:39:19 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/07 21:47:23 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,25 +74,4 @@ void	free_stack(t_stack **head)
 		current = next_node;
 	}
 	*head = NULL;
-}
-
-t_stack	*find_highest_node(t_stack *stack_a_node)
-{
-	int		highest_value;
-	t_stack	*highest_node;
-
-	highest_node = NULL;
-	highest_value = INT_MIN;
-	if (stack_a_node == NULL)
-		return (NULL);
-	while (stack_a_node)
-	{
-		if (stack_a_node->fig > highest_value)
-		{
-			highest_value = stack_a_node->fig;
-			highest_node = stack_a_node;
-		}
-		stack_a_node = stack_a_node->next_node;
-	}
-	return (highest_node);
 }
