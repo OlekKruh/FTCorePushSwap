@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 21:49:26 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/08 00:13:02 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/08 19:44:34 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	set_current_position(t_stack *stack)
 	}
 }
 
-static void	set_target_node(t_stack *stack_a, t_stack *stack_b)
+void	set_target_node(t_stack *stack_a, t_stack *stack_b)
 {
 	t_stack	*current_a;
 	t_stack	*target_node;

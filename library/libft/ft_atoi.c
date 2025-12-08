@@ -6,9 +6,11 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 18:19:47 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/09/26 13:53:05 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/08 19:36:25 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *src)
 {

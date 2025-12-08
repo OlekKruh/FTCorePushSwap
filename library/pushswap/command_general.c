@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 23:53:28 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/08 00:12:00 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/08 19:44:34 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	move_nodes(t_stack **stack_a, t_stack **stack_b)
 	pa(stack_a, stack_b);
 }
 
-static void	rotate_both(t_stack **a, t_stack **b, t_stack *cheapest_node)
+void	rotate_both(t_stack **a, t_stack **b, t_stack *cheapest_node)
 {
 	while (*a != cheapest_node->target_node
 		&& *b != cheapest_node)
@@ -58,7 +58,7 @@ static void	rotate_both(t_stack **a, t_stack **b, t_stack *cheapest_node)
 	set_current_position(*b);
 }
 
-static void	reverse_rotate_both(t_stack **a, t_stack **b,
+void	reverse_rotate_both(t_stack **a, t_stack **b,
 				t_stack *cheapest_node)
 {
 	while (*a != cheapest_node->target_node

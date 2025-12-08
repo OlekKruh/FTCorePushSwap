@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 19:52:50 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/08 00:22:47 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/08 19:43:44 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void			free_stack(t_stack **head);
 t_stack			*find_highest_node(t_stack *stack_a);
 void			init_stack(t_stack *stack_a, t_stack *stack_b);
 void			set_current_position(t_stack *stack);
-static void		set_target_node(t_stack *stack_a, t_stack *stack_b);
+void			set_target_node(t_stack *stack_a, t_stack *stack_b);
 t_stack			*find_smallest_node(t_stack *stack);
 void			set_price(t_stack *stack_a, t_stack *stack_b);
 void			set_cheapest(t_stack *stack_b);
@@ -87,8 +87,8 @@ void			rrr(t_stack **a, t_stack **b);
 void			move_nodes(t_stack **stack_a, t_stack **stack_b);
 void			finish_rotation(t_stack **stack, t_stack *top_node,
 					char stack_name);
-static void		rotate_both(t_stack **a, t_stack **b, t_stack *cheapest_node);
-static void		reverse_rotate_both(t_stack **a, t_stack **b,
+void			rotate_both(t_stack **a, t_stack **b, t_stack *cheapest_node);
+void			reverse_rotate_both(t_stack **a, t_stack **b,
 					t_stack *cheapest_node);
 
 #endif
