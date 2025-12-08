@@ -53,7 +53,7 @@ size_t	stack_length(t_stack *node)
 	len = 0;
 	if (node == NULL)
 		return (len);
-	while (node->next_node)
+	while (node)
 	{
 		node = node->next_node;
 		len++;
