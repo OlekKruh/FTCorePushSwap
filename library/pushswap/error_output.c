@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 21:36:54 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/06 12:38:37 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/10 22:43:09 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,20 @@
 
 #include "pushswap.h"
 
+void	not_enough_args(void)
+{
+	exit(1);
+}
+
 void	invalid_argv(void)
 {
-	ft_printf("Error\n");
+	write(2, "Error\n", 6);
 	exit (2);
 }
 
 void	invalid_stack(t_stack **head)
 {
-	ft_printf("Error\n");
+	write(2, "Error\n", 6);
 	free_stack(head);
 	exit (2);
 }

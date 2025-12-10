@@ -32,6 +32,7 @@ int				main(int argc, char **argv);
 
 //***** Error Handler *****
 void			invalid_argv(void);
+void			not_enough_args(void);
 void			invalid_stack(t_stack **head);
 
 //***** Validation *****

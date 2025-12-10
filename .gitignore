@@ -10,6 +10,11 @@ CMakeCache.txt
 CMakeLists.txt
 CMakeFiles/
 cmake_install.cmake
+checker_Mac
+push_swap
+push_swap_test.sh
+traces.txt
+Push-Swap-Tester/
 #Makefile
 build.ninja
 
