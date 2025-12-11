@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:13:01 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/11 00:39:57 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/11 22:24:24 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	stack_a_creating(t_stack **stack_a, int argc, char **argv)
 {
-//	if (argc < 1)
-//		invalid_argv();
 	if (argc <= 2)
 		proces_single_argv(stack_a, argv[1]);
 	else

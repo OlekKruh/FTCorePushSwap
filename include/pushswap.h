@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 19:52:50 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/12/08 19:43:44 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/11 22:20:42 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int				main(int argc, char **argv);
 
 //***** Error Handler *****
 void			invalid_argv(void);
-void			not_enough_args(void);
 void			invalid_stack(t_stack **head);
 
 //***** Validation *****

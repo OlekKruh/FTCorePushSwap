@@ -6,7 +6,7 @@
 /*   By: okruhlia <okruhlia@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 18:19:47 by okruhlia          #+#    #+#             */
-/*   Updated: 2025/10/11 19:42:37 by okruhlia         ###   ########.fr       */
+/*   Updated: 2025/12/11 22:20:11 by okruhlia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,6 @@
 # include <limits.h>
 # include <stdint.h>
 # include <unistd.h>
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 int		ft_isdigit(int dig);
 char	**ft_split(const char *src, char spl);
